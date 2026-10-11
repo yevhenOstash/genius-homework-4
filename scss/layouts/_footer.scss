@@ -1,0 +1,141 @@
+.footer {
+  background-color: var(--color-main-text);
+  position: relative;
+  min-height: 388px;
+  padding: 32px 71px 66px 71px;
+  &::after {
+    display: none;
+
+    @media screen and (min-width: $bp-dekstop) {
+      display: block;
+      content: '';
+      position: absolute;
+      background-image: url(../images/medicaments-footer.png);
+      width: 247px;
+      height: 152px;
+      background-size: 100%;
+      bottom: 0;
+      right: 0;
+      background-repeat: no-repeat;
+      padding: 0;
+    }
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0;
+    gap: 0;
+    flex-grow: 0;
+    text-align: center;
+    @media screen and (min-width: $bp-dekstop) {
+      flex-direction: row;
+      gap: 186px;
+      height: 278px;
+      text-align: start;
+      padding: 56px 0 56px 0;
+      flex-grow: 1;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    gap: 0px;
+
+    flex-direction: column;
+    align-items: center;
+    @media screen and (min-width: $bp-dekstop) {
+      flex-direction: row;
+      gap: 186px;
+      flex-grow: 1;
+      align-items: flex-start;
+    }
+  }
+
+  &__address {
+    display: flex;
+    gap: 0px;
+    flex-direction: column;
+    align-items: center;
+    @media screen and (min-width: $bp-dekstop) {
+      flex-direction: row;
+      gap: 186px;
+      align-items: flex-start;
+    }
+  }
+
+  &__item {
+    margin-bottom: 16px;
+  }
+
+  &__contacts {
+    display: none;
+    @media screen and (min-width: $bp-dekstop) {
+      display: block;
+    }
+  }
+
+  &__socials {
+    gap: 24px;
+    display: none;
+    @media screen and (min-width: $bp-dekstop) {
+      display: flex;
+    }
+  }
+
+  &__icon {
+    fill: var(--color-footer-text);
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    @media screen and (min-width: $bp-dekstop) {
+      width: 42px;
+      height: 42px;
+    }
+  }
+
+  &__policy {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    .footer__item {
+      margin-bottom: 0;
+      display: inline-block;
+      @media screen and (min-width: $bp-dekstop) {
+        margin-bottom: 16px;
+        flex-direction: row;
+      }
+    }
+  }
+
+  &__copyright {
+    color: var(--color-light-gray);
+    font-style: normal;
+    font-size: 13px;
+  }
+
+  &__link {
+    color: var(--color-footer-text);
+    font-size: 14px;
+    transition: color 0.2s;
+    @media screen and (min-width: $bp-dekstop) {
+      font-size: 16px;
+    }
+    &:hover {
+      color: var(--color-main-logo);
+      font-weight: 700;
+    }
+  }
+  &__socials--mob {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (min-width: $bp-dekstop) {
+      display: none;
+    }
+  }
+}

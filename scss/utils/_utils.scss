@@ -1,0 +1,11 @@
+.hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.color-brand {
+  color: var(--color-main-logo);
+}

@@ -1,0 +1,40 @@
+.button {
+  background-color: var(--color-main-logo);
+  border-radius: 32px;
+  color: var(--color-button-text);
+  cursor: pointer;
+  border-style: solid;
+  border-color: var(--color-main-logo);
+  font-weight: 600;
+  font-size: 16px;
+  width: 186px;
+  height: 44px;
+  margin: 0 0 8px 0;
+  transition:
+    background-color 0.2s,
+    color 0.2s;
+
+  @media screen and (min-width: $bp-tablet) {
+    width: 219px;
+    height: 53px;
+    font-size: 18px;
+    margin: 0 0 14px 0;
+  }
+  &:hover {
+    background-color: transparent;
+    color: var(--color-main-text);
+  }
+
+  &--form {
+    width: 100%;
+    max-width: 241px;
+    margin: 0 auto 8px auto;
+    display: block;
+    @media screen and (min-width: $bp-dekstop) {
+      max-width: 281px;
+    }
+    &:hover {
+      color: var(--color-footer-text);
+    }
+  }
+}

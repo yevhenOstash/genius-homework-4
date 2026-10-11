@@ -1,0 +1,31 @@
+.logo {
+  color: var(--color-main-logo);
+  text-transform: capitalize;
+  font-family: 'Play', sans-serif;
+  text-decoration: none;
+  font-weight: 700;
+  flex-shrink: 0;
+
+  &--hero {
+    line-height: 0.8;
+    font-size: 54px;
+    margin: 0 0 32px 0;
+    white-space: nowrap;
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 140px;
+      margin: 0 0 40px 0;
+      white-space: wrap;
+    }
+  }
+
+  &--link {
+    width: 57px;
+    height: 30px;
+    margin-bottom: 42px;
+    @media screen and (min-width: $bp-dekstop) {
+      width: 83px;
+      height: 42x;
+      margin-bottom: 0px;
+    }
+  }
+}

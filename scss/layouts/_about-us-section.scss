@@ -1,0 +1,115 @@
+.about-us {
+  &__container {
+    display: flex;
+    flex-direction: column;
+
+    gap: 6px;
+    @media screen and (min-width: $bp-dekstop) {
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 0;
+    }
+  }
+
+  &__content {
+    max-width: 320px;
+    @media screen and (min-width: $bp-dekstop) {
+      max-width: 709px;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+    }
+  }
+
+  &__title {
+    margin: 0 0 24px 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+    @media screen and (min-width: $bp-dekstop) {
+      font-size: 64px;
+      font-family: 'Play', sans-serif;
+      font-weight: 700;
+      margin: 0;
+    }
+  }
+
+  &__text {
+    line-height: 1.7;
+    font-size: 18px;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    @media screen and (min-width: $bp-dekstop) {
+      font-size: 22px;
+      font-family: 'Play', sans-serif;
+    }
+  }
+
+  &__visuals {
+    position: relative;
+    min-height: 64px;
+    @media screen and (min-width: $bp-dekstop) {
+      flex: 0 0 499px;
+      display: flex;
+      gap: 40px;
+      flex-direction: column;
+      min-height: auto;
+    }
+  }
+
+  &__image {
+    display: none;
+    width: 327px;
+    height: 327px;
+    border-radius: 50%;
+    object-fit: cover;
+    @media screen and (min-width: $bp-dekstop) {
+      display: block;
+    }
+    &--second {
+      align-self: flex-end;
+    }
+  }
+
+  &__star {
+    position: absolute;
+
+    &--1 {
+      display: none;
+      @media screen and (min-width: $bp-dekstop) {
+        display: block;
+        transform: rotate(-30deg);
+        top: 5%;
+        right: 5%;
+        fill: var(--color-main-logo);
+        animation: spin-animation 7s;
+      }
+    }
+
+    &--2 {
+      display: none;
+      @media screen and (min-width: $bp-dekstop) {
+        display: block;
+        transform: rotate(22deg);
+        top: 40%;
+        right: 12%;
+        fill: var(--color-light-gray);
+        animation: scale-animation 7s;
+      }
+    }
+
+    &--3 {
+      bottom: 0;
+      right: 5%;
+      animation: spin-scale-animation 7s;
+      width: 40px;
+      height: 40px;
+      @media screen and (min-width: $bp-dekstop) {
+        top: 50%;
+        left: 25%;
+        width: 64px;
+        height: 64px;
+      }
+    }
+  }
+}

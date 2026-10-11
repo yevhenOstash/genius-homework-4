@@ -1,0 +1,21 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 32px;
+
+  &__dot {
+    background-color: var(--color-light-gray);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+    @media screen and (min-width: $bp-dekstop) {
+      width: 11px;
+      height: 11px;
+    }
+    &--active {
+      background-color: var(--color-main-logo);
+    }
+  }
+}

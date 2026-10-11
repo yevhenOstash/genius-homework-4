@@ -1,0 +1,14 @@
+.policy {
+  color: var(--color-light-gray);
+  text-align: center;
+  max-width: 220px;
+  font-size: 12px;
+  line-height: 1.5;
+  font-weight: 400;
+  margin: 0 auto;
+
+  &__link {
+    color: var(--color-light-gray);
+    text-decoration: underline;
+  }
+}
