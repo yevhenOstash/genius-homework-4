@@ -1,6 +1,6 @@
 .hero-section {
   margin-bottom: 10px;
-  padding-bottom: 30px;
+  padding-bottom: 100px;
   background-image:
     linear-gradient(
       90deg,
@@ -11,13 +11,13 @@
     ),
     url('../images/home-section-back.webp');
   background-size: cover;
-  background-position: right top;
+  background-position: center top;
   background-repeat: no-repeat;
   padding-top: 135px;
 
   @media screen and (min-width: $bp-tablet) {
-    background-position: 180px top;
     padding-bottom: 300px;
+      background-position: right center;
   }
 
   &__container {

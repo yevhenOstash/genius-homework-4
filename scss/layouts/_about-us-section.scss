@@ -26,6 +26,9 @@
     font-family: 'Roboto', sans-serif;
     font-size: 32px;
     font-weight: 500;
+    @media screen and (min-width: $bp-tablet) {
+    font-size: 48px;
+  }
     @media screen and (min-width: $bp-dekstop) {
       font-size: 64px;
       font-family: 'Play', sans-serif;

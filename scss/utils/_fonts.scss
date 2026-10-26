@@ -30,3 +30,11 @@
   font-weight: 700;
   src: url('../fonts/play-v21-cyrillic_latin-700.woff2') format('woff2');
 }
+/* roboto-500 - cyrillic_latin */
+@font-face {
+  font-display: swap; 
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/roboto-v51-cyrillic_latin-500.woff2') format('woff2'); 
+}

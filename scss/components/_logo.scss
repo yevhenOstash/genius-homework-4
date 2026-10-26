@@ -11,10 +11,15 @@
     font-size: 54px;
     margin: 0 0 32px 0;
     white-space: nowrap;
+    
     @media screen and (min-width: $bp-tablet) {
-      font-size: 140px;
+      font-size: 90px;
       margin: 0 0 40px 0;
       white-space: wrap;
+    }
+       @media screen and (min-width: $bp-dekstop) {
+      font-size: 140px;
+     
     }
   }
 

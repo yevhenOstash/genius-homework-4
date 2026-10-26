@@ -6,7 +6,7 @@
       rgba(43, 127, 255, 0) 0%,
       rgba(43, 127, 255, 0) 0%
     ),
-    url(../images/blue-wave.svg);
+    url(../images/background.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left top;
@@ -17,5 +17,6 @@
   @media screen and (min-width: $bp-dekstop) {
     background-position: center top;
     padding-top: 0px;
+    background-size: 100% 100%;
   }
 }
